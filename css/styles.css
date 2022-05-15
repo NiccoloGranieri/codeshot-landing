@@ -71,7 +71,7 @@
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   body {
     padding: 0vw 15vw;
-    font-size: 20pt;
+    font-size: 18pt;
   }
 }
 
@@ -79,13 +79,13 @@
 @media (min-width:1281px) {
   /* hi-res laptops and desktops */
   body {
-    padding: 0vw 25vw;
-    font-size: 25pt;
+    padding: 0vw 30vw;
+    font-size: 15pt;
   }
 
   p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .logo {
@@ -94,7 +94,7 @@
   }
 
   .social-icons {
-    max-width: 50px;
+    max-width: 40px;
   }
 
   h1, h3 {
