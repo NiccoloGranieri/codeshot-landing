@@ -1,19 +1,110 @@
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 25pt;
-    color: #52576f;
+/* MOBILE */
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  body {
+    height: 100vh;
+    padding: 0vw 5vw;
+    font-family: "Inter", sans-serif;
+    font-size: 12pt;
+    color: #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  h1, h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    width: 150px;
+    margin: 0px;
+  }
+
+  .social-icons {
+    max-width: 40px;
   }
 
   .main {
-    width: 100%;
-    height: 750px;
-    padding: 0px 10vw;
-    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
+    padding: 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 1rem;
+    line-height: 1.6;
+    text-align: justify;
   }
+
+  .grid-of-social-icons {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 0fr));
+  }
+
+  #homepage {
+    padding: 10px 0px;
+  }
+}
+
+/* LANDSCAPE MOBILE */
+@media (min-width:641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  body {
+    padding: 0vw 15vw;
+    font-size: 20pt;
+  }
+}
+
+/* LANDSCAPE IPAD */
+@media (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  body {
+    padding: 0vw 15vw;
+    font-size: 20pt;
+  }
+}
+
+/* DESKTOP */
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  body {
+    padding: 0vw 25vw;
+    font-size: 25pt;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 200px;
+    margin: 0px;
+  }
+
+  .social-icons {
+    max-width: 50px;
+  }
+
+  h1, h3 {
+    margin: 0px;
+  }
+
+  #homepage {
+    padding: 10px 0px;
+  }
+}
+
+/* min-width:481px // portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+/* min-width:1025px // big landscape tablets, laptops, and desktops */ 
